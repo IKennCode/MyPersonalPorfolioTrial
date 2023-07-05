@@ -1,0 +1,173 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: color #f3f5f8;
+} 
+nav{ 
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 100;
+   
+    
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800 ;
+    color: black;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform:capitalize;
+}
+b{
+    font-size: 40px;
+    color: blue ;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+    
+}
+.navItems li a{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+    
+}
+.navItems li:hover a, .links a:hover{
+    color: blue;
+    
+    
+}
+.links a{
+    font-size: 30px;
+    color: black;
+    margin: 25px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 20%;
+    background: linear-gradient(45deg, rgb(244, 244, 247), rgb(247, 243, 243));
+    animation: object1 6s linear infinite;
+}
+@keyframes objec1{
+    50%{
+        left: -4%;
+        top: 80%;
+    }
+}
+.cols{
+    width: 100%;
+}
+.cols0{
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: black;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color:blue ;
+}
+h1{
+    display: block;
+    font-size: relatives;
+    font-weight: 900;
+    color: black;
+}
+.multiText{
+    color: blue;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 50%;
+    font-size: 20px;
+    color: black;
+}
+.btns{
+    width: 100%;
+    position: relative;
+    right: 40px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    background-color: lightgray;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    align-content:flex-start;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,4);
+    
+}
+button:hover{
+    background-color: whitesmoke;
+    
+    
+}
+.imgbox{
+    position: relative;
+    height: 100%;
+    width: calc(100% - 50px);
+    top: -700px;
+    left: 600px;
+    animation: animateUser 5s linear infinite;  
+}
+@keyframes animateUser {
+    50%{
+        left: 500px;
+        top: -650px;
+    }
+    
+}
